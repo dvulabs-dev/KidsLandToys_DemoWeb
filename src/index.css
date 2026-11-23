@@ -1,0 +1,137 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Baloo 2', ui-rounded, system-ui, sans-serif;
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Caveat', cursive;
+
+  --color-navy: #1a2b7c;
+  --color-navy-deep: #0f1b5a;
+  --color-royal: #2d48c9;
+  --color-pink: #e6337a;
+  --color-pink-deep: #c4225f;
+  --color-pink-soft: #fde7f0;
+  --color-sun: #ffcd29;
+  --color-sun-deep: #f5b400;
+  --color-sun-soft: #fff6d6;
+  --color-mint: #19b58a;
+  --color-mist: #f1f6ff;
+  --color-mist-line: #dbe6fb;
+  --color-ink: #17204a;
+  --color-muted: #5b6488;
+  --color-whatsapp: #1fa855;
+  --color-whatsapp-deep: #178a45;
+
+  --shadow-pop: 0 6px 0 0 rgb(26 43 124 / 0.12);
+  --shadow-card: 0 10px 30px -12px rgb(26 43 124 / 0.25);
+  --shadow-lift: 0 22px 40px -16px rgb(26 43 124 / 0.35);
+
+  --ease-snap: cubic-bezier(0.23, 1, 0.32, 1);
+
+  --animate-float: float 5s ease-in-out infinite;
+  --animate-float-slow: float 7s ease-in-out infinite;
+  --animate-wiggle: wiggle 2.4s ease-in-out infinite;
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-pulse-ring: pulse-ring 2.2s ease-out infinite;
+  --animate-spin-slow: spin 22s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+    50% { transform: translateY(-12px) rotate(var(--r, 0deg)); }
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgb(31 168 85 / 0.55); }
+    80%, 100% { box-shadow: 0 0 0 16px rgb(31 168 85 / 0); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+  button, a, input, select, textarea {
+    outline-offset: 3px;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-royal);
+    border-radius: 0.5rem;
+  }
+  ::selection {
+    background: var(--color-sun);
+    color: var(--color-navy-deep);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Buttons (.btn itself is an @utility below so the variants can @apply it) */
+  .btn-navy { @apply btn bg-navy text-white shadow-pop hover:-translate-y-0.5 hover:bg-royal; }
+  .btn-pink { @apply btn bg-pink text-white shadow-pop hover:-translate-y-0.5 hover:bg-pink-deep; }
+  .btn-sun { @apply btn bg-sun text-navy-deep shadow-pop hover:-translate-y-0.5 hover:bg-sun-deep; }
+  .btn-white { @apply btn bg-white text-navy shadow-pop hover:-translate-y-0.5 hover:bg-mist; }
+  .btn-wa { @apply btn bg-whatsapp text-white shadow-pop hover:-translate-y-0.5 hover:bg-whatsapp-deep; }
+  .btn-outline { @apply btn border-2 border-navy/20 bg-white text-navy hover:border-navy hover:bg-mist; }
+  .btn-sm { @apply px-4 py-2.5 text-sm; }
+
+  /* Form controls */
+  .field {
+    @apply w-full rounded-2xl border-2 border-mist-line bg-white px-4 py-3 text-ink placeholder:text-muted/60 transition focus:border-royal focus:outline-none focus:ring-4 focus:ring-royal/15;
+  }
+  .field-error { @apply border-pink focus:border-pink focus:ring-pink/15; }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border-2 border-mist-line bg-white px-3.5 py-1.5 text-sm font-bold text-navy transition hover:border-royal;
+  }
+  .chip-active { @apply border-navy bg-navy text-white hover:border-navy; }
+
+  .card {
+    @apply rounded-3xl border border-mist-line bg-white shadow-card;
+  }
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-bold leading-none whitespace-nowrap transition duration-200 ease-[var(--ease-snap)] active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+@layer utilities {
+  .dotted-bg {
+    background-image: radial-gradient(rgb(26 43 124 / 0.10) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+  }
+  .stripes-bg {
+    background-image: repeating-linear-gradient(135deg, rgb(255 255 255 / 0.06) 0 14px, transparent 14px 28px);
+  }
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+}
