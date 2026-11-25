@@ -25,7 +25,7 @@ export default function About() {
               ordering.
             </p>
             <p>
-              Find us on {STORE.address.line1}, or order online whenever you like. Browse our collection and contact us
+              Find us in {STORE.address.line1}, or order online whenever you like. Browse our collection and contact us
               if you need help choosing the right item.
             </p>
           </div>

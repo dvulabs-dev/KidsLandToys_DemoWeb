@@ -5,7 +5,7 @@
 export const STORE = {
   name: 'Asanka Toys',
   short: 'Asanka Toys',
-  town: 'Kurunegala',
+  town: 'Negombo',
   tagline: 'Where every child’s smile begins', // from leaflet
 
   phones: [
@@ -13,12 +13,11 @@ export const STORE = {
   ],
 
   address: {
-    line1: 'No. 182/2, Dambulla Road', // from leaflet
-    line2: 'Kurunegala',
-    full: 'No. 182/2, Dambulla Road, Kurunegala',
+    line1: 'Negombo',
+    full: 'Negombo, Sri Lanka',
   },
   mapUrl:
-    'https://www.google.com/maps/search/?api=1&query=Asanka+Toys+Dambulla+Road+Kurunegala',
+    'https://www.google.com/maps/search/?api=1&query=Asanka+Toys+Negombo',
 
   onlineHours: 'Online orders open 24 hours', // from leaflet — owner to confirm
   storeHours: 'Shop opening hours — please call to confirm', // owner to supply

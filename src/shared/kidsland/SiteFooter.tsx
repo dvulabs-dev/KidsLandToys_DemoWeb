@@ -12,7 +12,7 @@ export function SiteFooter({ onNavigate }: { onNavigate?: NavigateFn }) {
             Kids <span className="text-pink">Land</span>
           </p>
           <p className="mt-3 max-w-xs text-sm text-white/75">
-            Toys, baby essentials and thoughtful gifts for children, from our shop in Kurunegala.
+            Toys, baby essentials and thoughtful gifts for children, from our shop in Negombo.
           </p>
           <div className="mt-5 flex gap-2">
             {['Facebook', 'Instagram', 'TikTok'].map((s) => (
@@ -59,7 +59,7 @@ export function SiteFooter({ onNavigate }: { onNavigate?: NavigateFn }) {
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-7xl px-4 py-4 text-xs text-white/60 sm:px-6">
-          © 2025 Asanka Toys, Kurunegala · Website demo — sample products and prices
+          © 2025 Asanka Toys, Negombo · Website demo — sample products and prices
         </p>
       </div>
     </footer>

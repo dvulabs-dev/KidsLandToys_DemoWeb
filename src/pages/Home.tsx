@@ -15,8 +15,17 @@ import { priceOf, rs } from '../lib/format'
 function Hero() {
   return (
     <section className="relative overflow-hidden bg-mist pb-20 sm:pb-24">
-      <div className="dotted-bg absolute inset-0" />
-      <div className="absolute -top-20 -left-20 h-80 w-80 rounded-full bg-pink-soft blur-2xl" />
+      {/* blurred shop-front photo */}
+      <img
+        src="/images/shop-front.png"
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full scale-110 object-cover blur-[3px]"
+        loading="eager"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/55 to-white/25" />
+      
+      <div className="absolute -top-20 -left-20 h-80 w-80 rounded-full bg-pink-soft/70 blur-2xl" />
       <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-sun-soft blur-3xl" />
 
       {/* floating decorations */}
@@ -92,7 +101,7 @@ function Hero() {
           className="relative mx-auto w-full max-w-xl lg:max-w-none"
         >
           <div className="relative rotate-1 overflow-hidden rounded-[2.5rem] border-[6px] border-white shadow-lift">
-            <img src="/images/hero.jpg" alt="Wooden train, building blocks, teddy bear and toy car on a table" className="aspect-[4/3] w-full object-cover" loading="eager" />
+            <img src="/images/hero-soft-toys.jpg" alt="Teddy bear, plush elephant and lion soft toys sitting together" className="aspect-[4/3] w-full object-cover" loading="eager" />
           </div>
 
           {/* 24h badge (from leaflet) */}
@@ -260,7 +269,7 @@ function VisitUs() {
         <div className="relative p-8 sm:p-12">
           <p className="font-script text-3xl leading-none text-sun">Any time you go through</p>
           <h2 id="visit-title" className="mt-1 text-4xl leading-tight font-extrabold sm:text-5xl">
-            Dambulla Road,
+            {STORE.town},
           </h2>
           <p className="mt-3 max-w-md text-xl text-white/85">
             you can buy your child <span className="font-script text-3xl text-pink">happiness.</span>

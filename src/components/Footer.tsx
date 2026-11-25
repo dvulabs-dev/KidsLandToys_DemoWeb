@@ -59,7 +59,7 @@ export function Footer() {
             <li className="flex gap-3">
               <MapPin size={20} className="mt-0.5 shrink-0 text-pink" />
               <a href={STORE.mapUrl} target="_blank" rel="noreferrer" className="hover:underline">
-                {STORE.address.line1}, {STORE.address.line2}
+                {STORE.address.full}
               </a>
             </li>
             {STORE.phones.map((p) => (

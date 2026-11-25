@@ -24,7 +24,7 @@ export default function Contact() {
   return (
     <>
       <PageBanner title="Contact us" eyebrow="We’d love to hear from you">
-        Call, WhatsApp or drop in to the shop on Dambulla Road. We reply to calls and WhatsApp messages quickly.
+        Call, WhatsApp or drop in to the shop in Negombo. We reply to calls and WhatsApp messages quickly.
       </PageBanner>
 
       <section className="container-x grid gap-8 py-12 lg:grid-cols-[1fr_1.1fr]">
@@ -56,7 +56,7 @@ export default function Contact() {
                 <span>
                   <b className="text-navy">{STORE.name}</b>
                   <br />
-                  {STORE.address.line1}, {STORE.address.line2}
+                  {STORE.address.full}
                 </span>
               </li>
               <li className="flex gap-3">

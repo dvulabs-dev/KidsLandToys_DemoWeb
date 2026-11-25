@@ -5,7 +5,7 @@ const MESSAGES = [
   '🚚 All-island delivery available',
   `📞 Call / WhatsApp ${PRIMARY_PHONE.display}`,
   '🛡️ 3-month warranty on ride-on jeeps',
-  `📍 Visit us on Dambulla Road, ${STORE.town}`,
+  `📍 Visit us in ${STORE.town}`,
 ]
 
 export function AnnouncementBar() {

@@ -86,7 +86,7 @@ export default function Checkout() {
               <textarea id="f-address" rows={3} className={`field ${errors.address ? 'field-error' : ''}`} autoComplete="street-address" value={form.address} onChange={(e) => update('address', e.target.value)} placeholder="House no., street, area" aria-invalid={!!errors.address} aria-describedby={errors.address ? 'f-address-err' : undefined} />
             </Field>
             <Field id="f-town" label="Town / city" error={errors.town}>
-              <input id="f-town" className={`field ${errors.town ? 'field-error' : ''}`} autoComplete="address-level2" value={form.town} onChange={(e) => update('town', e.target.value)} placeholder="e.g. Kurunegala" aria-invalid={!!errors.town} aria-describedby={errors.town ? 'f-town-err' : undefined} />
+              <input id="f-town" className={`field ${errors.town ? 'field-error' : ''}`} autoComplete="address-level2" value={form.town} onChange={(e) => update('town', e.target.value)} placeholder="e.g. Negombo" aria-invalid={!!errors.town} aria-describedby={errors.town ? 'f-town-err' : undefined} />
             </Field>
             <Field id="f-notes" label="Notes for the shop (optional)">
               <textarea id="f-notes" rows={2} className="field" value={form.notes} onChange={(e) => update('notes', e.target.value)} placeholder="Gift wrapping, preferred call time…" />

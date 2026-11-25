@@ -4,7 +4,7 @@ const ITEMS = [
   { icon: Truck, title: 'All-island delivery', sub: 'Available — ask the shop', tone: 'bg-sun-soft text-amber-700' },
   { icon: Clock, title: 'Online orders 24 hours', sub: 'Order any time', tone: 'bg-pink-soft text-pink' },
   { icon: MessageCircle, title: 'Quick response', sub: 'Calls & WhatsApp', tone: 'bg-emerald-50 text-whatsapp' },
-  { icon: ShieldCheck, title: 'Safe & trusted shop', sub: 'On Dambulla Road', tone: 'bg-mist text-royal' },
+  { icon: ShieldCheck, title: 'Safe & trusted shop', sub: 'Visit us in Negombo', tone: 'bg-mist text-royal' },
 ]
 
 export function TrustStrip() {
