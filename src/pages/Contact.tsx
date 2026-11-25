@@ -19,7 +19,7 @@ export default function Contact() {
     if (Object.keys(errs).length === 0) setDone(true)
   }
 
-  const waText = `Hello Kids Land! My name is ${form.name.trim()} (${form.contact.trim()}).\n${form.message.trim()}`
+  const waText = `Hello Asanka Toys! My name is ${form.name.trim()} (${form.contact.trim()}).\n${form.message.trim()}`
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function Contact() {
                   </span>
                   <span className="flex gap-2">
                     <a href={`tel:${p.tel}`} className="btn-navy btn-sm">Call</a>
-                    <a href={waLink('Hello Kids Land!', p.wa)} target="_blank" rel="noreferrer" className="btn-wa btn-sm">
+                    <a href={waLink('Hello Asanka Toys!', p.wa)} target="_blank" rel="noreferrer" className="btn-wa btn-sm">
                       <WhatsAppIcon size={16} /> WhatsApp
                     </a>
                   </span>

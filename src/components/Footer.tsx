@@ -22,9 +22,9 @@ export function Footer() {
         <div>
           <Logo light />
           <p className="mt-4 max-w-xs text-white/75">
-            Toys, ride-on jeeps, baby essentials and gifts — {STORE.tagline.toLowerCase()}.
+            Kids toys, soft toys, RC cars, ride-on jeeps and gifts — {STORE.tagline.toLowerCase()}.
           </p>
-          <a href={waLink('Hello Kids Land!')} target="_blank" rel="noreferrer" className="btn-wa btn-sm mt-5">
+          <a href={waLink('Hello Asanka Toys!')} target="_blank" rel="noreferrer" className="btn-wa btn-sm mt-5">
             <WhatsAppIcon size={18} /> Chat on WhatsApp
           </a>
         </div>

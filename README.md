@@ -1,6 +1,6 @@
-# Kids Land Toy Store — Website Demo (frontend only)
+# Asanka Toys — Website Demo (frontend only)
 
-A playful online toy shop demo for **Kids Land Toy Store, Kurunegala**, built with
+A playful online toy shop demo for **Asanka Toys, Kurunegala**, built with
 **React 18 + TypeScript + Vite + Tailwind CSS v4** (plus Framer Motion, Lucide icons and React Router).
 There is no backend: products are sample data, the cart lives in `localStorage`, and the checkout is a
 clearly-labelled demo.

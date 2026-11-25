@@ -3,14 +3,13 @@
  * Details marked "from leaflet" were taken from the shop's printed artwork.
  */
 export const STORE = {
-  name: 'Kids Land Toy Store',
-  short: 'Kids Land',
+  name: 'Asanka Toys',
+  short: 'Asanka Toys',
   town: 'Kurunegala',
   tagline: 'Where every child’s smile begins', // from leaflet
 
   phones: [
-    { display: '072 466 4445', tel: '+94724664445', wa: '94724664445' }, // from leaflet
-    { display: '075 371 7986', tel: '+94753717986', wa: '94753717986' }, // from leaflet
+    { display: '077 883 9780', tel: '+94778839780', wa: '94778839780' }, // call & WhatsApp
   ],
 
   address: {
@@ -19,7 +18,7 @@ export const STORE = {
     full: 'No. 182/2, Dambulla Road, Kurunegala',
   },
   mapUrl:
-    'https://www.google.com/maps/search/?api=1&query=Kids+Land+Toy+Store+Dambulla+Road+Kurunegala',
+    'https://www.google.com/maps/search/?api=1&query=Asanka+Toys+Dambulla+Road+Kurunegala',
 
   onlineHours: 'Online orders open 24 hours', // from leaflet — owner to confirm
   storeHours: 'Shop opening hours — please call to confirm', // owner to supply
@@ -29,7 +28,6 @@ export const STORE = {
 } as const
 
 export const PRIMARY_PHONE = STORE.phones[0]
-export const SECOND_PHONE = STORE.phones[1]
 
 /** Open WhatsApp with a ready-made message. */
 export function waLink(message: string, number: string = PRIMARY_PHONE.wa) {

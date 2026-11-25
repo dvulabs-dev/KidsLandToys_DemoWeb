@@ -57,10 +57,10 @@ const IMG = {
 export const HERO_IMAGE = IMG.hero
 
 export const STORE = {
-  name: 'Kids Land Toy Store',
+  name: 'Asanka Toys',
   town: 'Kurunegala',
-  phone: '077 123 4567',
-  whatsapp: '077 123 4567',
+  phone: '077 883 9780',
+  whatsapp: '077 883 9780',
   address: 'Main Street, Kurunegala, Sri Lanka',
   storeHours: 'Mon – Sat · 9.00 am – 8.00 pm',
   onlineHours: 'Orders taken online anytime · replies 9.00 am – 8.00 pm',

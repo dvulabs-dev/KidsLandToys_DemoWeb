@@ -11,7 +11,7 @@ const NAV = [
   { label: 'Home', to: '/' },
   { label: 'Shop', to: '/shop' },
   { label: 'Toys', to: '/shop?category=toys' },
-  { label: 'Baby', to: '/shop?category=baby' },
+  { label: 'Soft Toys', to: '/shop?category=dolls' },
   { label: 'Offers', to: '/shop?offers=1' },
   { label: 'About', to: '/about' },
   { label: 'Contact', to: '/contact' },
@@ -95,7 +95,7 @@ export function Header() {
 
         <div className="ml-auto flex items-center gap-2 md:ml-0">
           <a
-            href={waLink('Hello Kids Land! I have a question.')}
+            href={waLink('Hello Asanka Toys! I have a question.')}
             target="_blank"
             rel="noreferrer"
             className="btn-wa btn-sm hidden lg:inline-flex"
@@ -189,7 +189,7 @@ export function Header() {
                 <a href={`tel:${PRIMARY_PHONE.tel}`} className="btn-navy">
                   <Phone size={18} /> Call
                 </a>
-                <a href={waLink('Hello Kids Land! I have a question.')} target="_blank" rel="noreferrer" className="btn-wa">
+                <a href={waLink('Hello Asanka Toys! I have a question.')} target="_blank" rel="noreferrer" className="btn-wa">
                   <WhatsAppIcon size={18} /> WhatsApp
                 </a>
               </div>

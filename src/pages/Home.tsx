@@ -9,7 +9,7 @@ import { Reveal } from '../components/Reveal'
 import { WhatsAppIcon } from '../components/WhatsAppIcon'
 import { AGES, CATEGORIES } from '../data/categories'
 import { PRODUCTS } from '../data/products'
-import { JEEP_FROM_PRICE, PRIMARY_PHONE, SECOND_PHONE, STORE, waLink } from '../data/store'
+import { JEEP_FROM_PRICE, PRIMARY_PHONE, STORE, waLink } from '../data/store'
 import { priceOf, rs } from '../lib/format'
 
 function Hero() {
@@ -54,7 +54,7 @@ function Hero() {
             transition={{ delay: 0.12, duration: 0.5 }}
             className="mt-6 max-w-lg text-lg text-muted"
           >
-            Discover toys, baby essentials and gifts for every special moment — order online any time, or call and
+            Discover kids toys, soft toys, RC cars and gifts for every special moment — order online any time, or call and
             WhatsApp us on {PRIMARY_PHONE.display}.
           </motion.p>
           <motion.div
@@ -67,7 +67,7 @@ function Hero() {
               Shop Toys <ArrowRight size={20} />
             </Link>
             <a
-              href={waLink('Hello Kids Land! I would like to place an order.')}
+              href={waLink('Hello Asanka Toys! I would like to place an order.')}
               target="_blank"
               rel="noreferrer"
               className="btn-wa px-7 py-4 text-lg"
@@ -76,10 +76,10 @@ function Hero() {
             </a>
           </motion.div>
           <Link
-            to="/shop?category=baby"
+            to="/shop?category=dolls"
             className="group mt-5 inline-flex items-center gap-1.5 font-bold text-royal hover:underline"
           >
-            Explore Baby Essentials
+            Explore Soft Toys
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
@@ -158,7 +158,7 @@ function Categories() {
 }
 
 function Popular() {
-  const picks = PRODUCTS.filter((p) => (p.badge === 'Best Seller' || p.badge === 'New') && p.category !== 'ride-ons').slice(0, 8)
+  const picks = PRODUCTS.filter((p) => (p.badge === 'Best Seller' || p.badge === 'New') && p.category !== 'ride-ons' && p.category !== 'baby').slice(0, 8)
   return (
     <section className="container-x pt-20" aria-labelledby="pop-title">
       <SectionHeading
@@ -202,7 +202,7 @@ function AgeDiscovery() {
 }
 
 function GiftIdeas() {
-  const gifts = PRODUCTS.filter((p) => priceOf(p) <= 2500 && ['gifts', 'dolls', 'games', 'toys', 'baby'].includes(p.category))
+  const gifts = PRODUCTS.filter((p) => priceOf(p) <= 2500 && ['gifts', 'dolls', 'games', 'toys', 'vehicles'].includes(p.category))
     .sort((a, b) => (b.salePrice ? 1 : 0) - (a.salePrice ? 1 : 0))
     .slice(0, 4)
   return (
@@ -235,7 +235,7 @@ function WhyUs() {
   ]
   return (
     <section className="container-x pt-20" aria-labelledby="why-title">
-      <SectionHeading eyebrow="Kids Land promise" title={<span id="why-title">Why shop with us</span>} center />
+      <SectionHeading eyebrow="Asanka Toys promise" title={<span id="why-title">Why shop with us</span>} center />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {items.map(({ icon: Icon, title, text, tone }, i) => (
           <Reveal key={title} delay={i * 0.06}>
@@ -273,8 +273,6 @@ function VisitUs() {
               <Phone className="mt-0.5 shrink-0 text-sun" />
               <span>
                 <a href={`tel:${PRIMARY_PHONE.tel}`} className="font-bold hover:underline">{PRIMARY_PHONE.display}</a>
-                {' / '}
-                <a href={`tel:${SECOND_PHONE.tel}`} className="font-bold hover:underline">{SECOND_PHONE.display}</a>
               </span>
             </li>
             <li className="flex gap-3">
@@ -308,7 +306,7 @@ function VisitUs() {
           </svg>
           <div className="absolute top-[38%] left-[54%] -translate-x-1/2 -translate-y-full">
             <div className="flex animate-float flex-col items-center">
-              <span className="rounded-full bg-white px-3 py-1.5 text-sm font-extrabold whitespace-nowrap text-navy shadow-lift">Kids Land</span>
+              <span className="rounded-full bg-white px-3 py-1.5 text-sm font-extrabold whitespace-nowrap text-navy shadow-lift">Asanka Toys</span>
               <MapPin size={52} className="-mt-1 fill-pink text-white drop-shadow-lg" />
             </div>
           </div>

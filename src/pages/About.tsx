@@ -17,10 +17,10 @@ export default function About() {
       <PageBanner title="About us" eyebrow={STORE.tagline} />
       <section className="container-x grid items-center gap-10 py-14 lg:grid-cols-2">
         <Reveal>
-          <h2 className="text-3xl font-extrabold text-navy sm:text-4xl">Welcome to Kids Land Toy Store</h2>
+          <h2 className="text-3xl font-extrabold text-navy sm:text-4xl">Welcome to Asanka Toys</h2>
           <div className="mt-4 space-y-4 text-lg leading-relaxed text-ink/85">
             <p>
-              Kids Land Toy Store, {STORE.town} — a place to discover toys, baby essentials and thoughtful gifts for
+              Asanka Toys, {STORE.town} — a place to discover toys, baby essentials and thoughtful gifts for
               children. We aim to make choosing a little happiness simple, with friendly service and convenient online
               ordering.
             </p>

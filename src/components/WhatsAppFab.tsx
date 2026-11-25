@@ -8,10 +8,10 @@ export function WhatsAppFab() {
   const hideOnMobile = pathname === '/checkout' || pathname === '/cart'
   return (
     <a
-      href={waLink('Hello Kids Land! I have a question.')}
+      href={waLink('Hello Asanka Toys! I have a question.')}
       target="_blank"
       rel="noreferrer"
-      aria-label="Chat with Kids Land on WhatsApp"
+      aria-label="Chat with Asanka Toys on WhatsApp"
       className={`group fixed right-4 bottom-4 z-50 items-center gap-2 rounded-full bg-whatsapp p-3.5 text-white shadow-lift transition hover:bg-whatsapp-deep sm:right-6 sm:bottom-6 ${
         hideOnMobile ? 'hidden sm:flex' : 'flex'
       } animate-pulse-ring`}

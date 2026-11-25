@@ -11,13 +11,13 @@ export interface Category {
 
 export const CATEGORIES: Category[] = [
   { id: 'toys', name: 'Toys', blurb: 'Blocks, sets & play', image: '/images/blocks.jpg', emoji: '🧸', tint: 'bg-sun-soft' },
-  { id: 'baby', name: 'Baby Care', blurb: 'Feeding & first toys', image: '/images/feeding.jpg', emoji: '🍼', tint: 'bg-pink-soft' },
-  { id: 'educational', name: 'Educational', blurb: 'Learn through play', image: '/images/stem.jpg', emoji: '🧪', tint: 'bg-mist' },
-  { id: 'ride-ons', name: 'Ride-ons', blurb: 'Jeeps, bikes & trikes', image: '/images/ride-on.jpg', emoji: '🚙', tint: 'bg-sun-soft' },
-  { id: 'dolls', name: 'Dolls & Soft Toys', blurb: 'Cuddly companions', image: '/images/teddy.jpg', emoji: '🪆', tint: 'bg-pink-soft' },
+  { id: 'dolls', name: 'Soft Toys & Dolls', blurb: 'Cuddly companions', image: '/images/teddy.jpg', emoji: '🪆', tint: 'bg-pink-soft' },
   { id: 'vehicles', name: 'Vehicles', blurb: 'Cars, trucks & RC', image: '/images/rc-car.jpg', emoji: '🚗', tint: 'bg-mist' },
+  { id: 'ride-ons', name: 'Ride-ons', blurb: 'Jeeps, bikes & trikes', image: '/images/ride-on.jpg', emoji: '🚙', tint: 'bg-sun-soft' },
   { id: 'games', name: 'Games & Puzzles', blurb: 'Fun for the family', image: '/images/puzzle.jpg', emoji: '🧩', tint: 'bg-sun-soft' },
+  { id: 'educational', name: 'Educational', blurb: 'Learn through play', image: '/images/stem.jpg', emoji: '🧪', tint: 'bg-mist' },
   { id: 'gifts', name: 'Gifts', blurb: 'Ready to give', image: '/images/gift-set.jpg', emoji: '🎁', tint: 'bg-pink-soft' },
+  { id: 'baby', name: 'Baby Care', blurb: 'Feeding & first toys', image: '/images/feeding.jpg', emoji: '🍼', tint: 'bg-pink-soft' },
 ]
 
 export interface AgeGroup {

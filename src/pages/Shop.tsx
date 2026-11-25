@@ -196,7 +196,7 @@ export default function Shop() {
               <div className="mt-5 flex flex-wrap justify-center gap-3">
                 <button onClick={clearAll} className="btn-navy btn-sm">Clear filters</button>
                 <a
-                  href={waLink(`Hello Kids Land! I'm looking for: ${q || categoryName(category)}`)}
+                  href={waLink(`Hello Asanka Toys! I'm looking for: ${q || categoryName(category)}`)}
                   target="_blank"
                   rel="noreferrer"
                   className="btn-wa btn-sm"

@@ -59,7 +59,7 @@ export function SiteFooter({ onNavigate }: { onNavigate?: NavigateFn }) {
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-7xl px-4 py-4 text-xs text-white/60 sm:px-6">
-          © 2025 Kids Land Toy Store, Kurunegala · Website demo — sample products and prices
+          © 2025 Asanka Toys, Kurunegala · Website demo — sample products and prices
         </p>
       </div>
     </footer>

@@ -47,7 +47,7 @@ export function JeepCollection() {
                 <Phone size={18} /> Call {PRIMARY_PHONE.display}
               </a>
               <a
-                href={waLink('Hello Kids Land! I am interested in the Ride-on Jeep collection.')}
+                href={waLink('Hello Asanka Toys! I am interested in the Ride-on Jeep collection.')}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-wa"
